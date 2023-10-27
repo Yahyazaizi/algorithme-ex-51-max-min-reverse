@@ -1,0 +1,55 @@
+Algorithme exercice-51
+Fonction Minimum (T: Tableau réel ) : réel
+VariableS
+min : réel
+
+i : entier
+Début
+min <-- T(0)
+Pour i <-- 1 à 9 pas 1 faire
+Si min > T(i) Alors
+min < T(je)
+finSi
+fin Pour
+Retourne min
+Fin
+Fonction Maximum (T: Tableau réel ) : réel
+Variables
+max : réel
+i : entier
+Début
+maximum <- T(0)
+Pour i<-- 1 à 9 pas 1 faire
+Si max < T(i) Alors
+max <T(i)
+finSi
+fin Pour
+Retourne max
+Fin
+Fonction Inverse (T: Tableau réel) : Tableau réel
+Variables
+Tableau TI (10): réel
+i: entier
+Début
+Pour i<-- 0 à 9 pas 1 faire
+TI (9-i) <-- T(i)
+fin Pour
+Retourne TI
+Fin
+Variables
+Tableau T (10) : réel
+Tableau TS ( 10 ) : réel
+i : entier
+Début
+Pour i <-- 0 à 9 pas 1 faire
+Ecrire (" Donner l'élément ,i+1, "")
+Lire(T(i))
+fin Pour
+Ecrire ("Le minimum des éléments du tableau est : Minimum (T))
+
+Ecrire ("Le maximum des éléments du tableau est : Maximum (T))
+TS <--Inverse (T)
+Pour i <-- 0 à 9 pas 1 faire
+Ecrire (" L'élément ", i + 1, " du tableau inversé est : ", TS (i))
+fin Pour
+Fin
